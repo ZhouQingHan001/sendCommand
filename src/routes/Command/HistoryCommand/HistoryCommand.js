@@ -73,7 +73,7 @@ export default class HistoryCommand extends React.Component{
             <Card bordered={false}>
               <div className={styles.tableList}>
                 <div className={styles.header}>
-                  <Search placeholder="搜索关键词 命令Id/设备SN" onSearch={this.onSearch} enterButton style={{ width: 350 }} />
+                  <Search placeholder="搜索关键词 命令ID| SN" onSearch={this.onSearch} enterButton style={{ width: 350 }} />
                 </div>
                 <Table className={styles.Table} bordered columns={columns} dataSource={data.list} />
               </div>

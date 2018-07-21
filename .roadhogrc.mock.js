@@ -72,8 +72,8 @@ const proxy = {
   'GET /api/profile/basic': getProfileBasicData,
   'GET /api/profile/advanced': getProfileAdvancedData,
   
-  'GET /command/queryCommand': 'http://localhost:9998',
-  'POST /command/commandSend': 'http://localhost:9998',
+  'GET /command/queryCommand': 'http://localhost:3300',
+  'POST /command/commandSend': 'http://localhost:3300',
 
   'POST /api/login/account': (req, res) => {
     const { password, userName, type } = req.body;

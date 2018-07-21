@@ -49,13 +49,10 @@ export default class Home extends Component {
     return (
       <div className={styles.main}>
         <Tabs size="large" defaultActiveKey="1" tabBarExtraContent={<Button className={styles.button} type="primary" onClick={this.logout}>退出</Button>}>
-          <TabPane tab={<span>车位</span>} key="1">
+          <TabPane tab={<span>命令下发</span>} key="1">
             <this.parkingLot />
           </TabPane>
-          <TabPane tab={<span>车位锁</span>} key="2">
-            <this.parkingLock />
-          </TabPane>
-          <TabPane tab={<span>历史命令</span>} key="3">
+          <TabPane tab={<span>命令查询</span>} key="3">
             <this.historyCommand />
           </TabPane>
         </Tabs>,
